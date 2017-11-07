@@ -1,0 +1,19 @@
+---  
+ applications:
+ - name: demo-cf-my-app
+   buildpack: java_buildpack
+   instances: 1
+   memory: 1G
+   host: demo-cf-my-app
+ 
+   env:
+    APP_LOGGING_LEVEL: DEBUG
+    SPRING_PROFILES_ACTIVE: cloud
+   path:  target/pivotal-demo-0.1.0.jar
+   services:
+    - my-postgres-cf-db
+    - mydemo-redis
+
+
+    
+    

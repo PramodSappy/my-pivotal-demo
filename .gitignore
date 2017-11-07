@@ -1,0 +1,8 @@
+.idea/
+target/
+*.iml
+transaction-logs/
+jmsdata/
+/src/main/resources/git.properties
+*.log
+/bin/
