@@ -6,6 +6,8 @@ import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 
+// Testing for push
+// This is application class
 @SpringBootApplication
 @EnableJpaRepositories
 @EnableCaching
