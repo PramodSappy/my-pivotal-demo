@@ -19,6 +19,11 @@ public class Registration {
     @Autowired
     private UserService userService;
     // Return registration form template
+    
+    @RequestMapping("/")
+    public String greeting() {
+        return "greetings!";
+    }
    
     @RequestMapping(value="/register", method = RequestMethod.POST)
     public User register(@RequestBody @Valid User user) {

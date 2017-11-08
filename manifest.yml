@@ -7,12 +7,14 @@
    host: demo-cf-my-app
  
    env:
+    JBP_CONFIG_DEBUG: '{enabled: true}'
     APP_LOGGING_LEVEL: DEBUG
     SPRING_PROFILES_ACTIVE: cloud
    path:  target/pivotal-demo-0.1.0.jar
    services:
     - my-postgres-cf-db
     - mydemo-redis
+   
 
 
     
